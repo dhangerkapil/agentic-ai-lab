@@ -88,10 +88,10 @@ pip install -r requirements.txt
 ### Step 4: Azure AI Foundry Setup
 
 1. **Create Azure AI Foundry Project**
-   - Navigate to [Azure AI Foundry Portal](https://ai.azure.com)
-   - Create a new project with Standard pricing tier
+   - Navigate to [Azure Portal](https://ms.portal.azure.com)
    - Choose region based on model availability (East US 2 recommended)
-
+   - Create a new AI Foundry resource with default project provided
+   
 2. **Deploy Required Models & Services**
    
    | Model Type | Recommended Models | Purpose |
