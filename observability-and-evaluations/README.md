@@ -48,15 +48,6 @@ Learn how to evaluate generative AI models using:
 - **Multiple metrics**: Measure quality aspects like F1 score, relevance, groundedness, coherence
 - **Risk & Safety**: Assess potential risks using safety evaluators
 
-### 3-AIRedTeaming_v2.ipynb
-
-Advanced AI red teaming and security testing:
-
-- **Adversarial Testing**: Test AI systems against adversarial inputs
-- **Safety Evaluation**: Assess model safety and robustness
-- **Vulnerability Assessment**: Identify potential security weaknesses
-- **Responsible AI**: Ensure compliance with responsible AI practices
-
 ## Running the Evaluations
 
 1. **Local Evaluation**:
