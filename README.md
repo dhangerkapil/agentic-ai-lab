@@ -95,7 +95,7 @@ pip install -r requirements.txt
 
    - On the Create page, provide the following information:
 
-   <img src="images/create-foundry-resource.png" width="75%"/>
+   <img src="images/foundry-resource-creation.png" width="75%"/>
 
    | Project details | Description |
    |----------------|-------------|
@@ -117,7 +117,7 @@ pip install -r requirements.txt
    - On the left Nav Menu of the foundry portal go to Models+endpoints
    - Click Deploy a model button-->Deploy base model
       - Search for the models in the table above , select a model, click confirm and Deploy and connect
-       <img src="images/DeployModels.png" width="75%"/>
+       <img src="images/deploy-models.png" width="75%"/>
 
 3. **Configure an Azure Search Service**
    - Create an Azure AI Search resource in Azure
