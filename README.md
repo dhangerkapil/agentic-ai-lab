@@ -49,7 +49,7 @@ agentic-ai-lab/
 ├── 🔴 ai-red-teaming-agent/   # AI Red Teaming and Security Testing
 ├── 🤖⚙️ agent-framework/        # Microsoft Agent Framework for advanced agent development
 ├── 🏗️ sk-and-autogen/          # Semantic Kernel and AutoGen frameworks
-├── 📊 observalibility/         # Monitoring, evaluation, and quality assurance
+├── 📊 observability/         # Monitoring, evaluation, and quality assurance
 ├── 🗣️ ai-language/             # AI Language Services with Logic Apps low-code workflows
 ├── 👁️ ai-vision/               # AI Vision Services with low-code solutions
 ├── 📄 content-understanding/   # Document classification and content extraction
@@ -275,12 +275,12 @@ The **Microsoft Agent Framework** is an open-source development kit that unifies
 | ❤️ [AutoGen Personalized Analytics](sk-and-autogen/3-autogen-personalized-heart-rate.ipynb) | Health domain specialization |
 
 ### 📊 Phase 8: Quality & Operations
-**Location:** `observalibility/`
+**Location:** `observability/`
 
 | Notebook | Description |
 |----------|-------------|
-| 👁️ [Observability](observalibility/1-Observability.ipynb) | Monitoring and telemetry |
-| 📈 [Evaluation](observalibility/2-evaluation.ipynb) | Quality assessment and benchmarking |
+| 👁️ [Observability](observability/1-Observability.ipynb) | Monitoring and telemetry |
+| 📈 [Evaluation](observability/2-evaluation.ipynb) | Quality assessment and benchmarking |
 
 ### 🗣️ Phase 9: AI Language Services with Low-Code Workflows
 **Location:** `ai-language/`
