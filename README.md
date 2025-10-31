@@ -87,7 +87,7 @@ pip install -r requirements.txt
 
 ### Step 4: Azure AI Foundry Setup
 
-1. **Create Azure AI Foundry Project**
+1. **Create Azure AI Foundry Resource and Project**
    
    To create an AI Foundry resource in the Azure portal follow these instructions:
 
@@ -95,7 +95,7 @@ pip install -r requirements.txt
 
    - On the Create page, provide the following information:
 
-   <img src="images/foundry-resource-creation.png" width="75%"/>
+   <img src="images/ai-foundry-deployment.png" width="75%"/>
 
    | Project details | Description |
    |----------------|-------------|
