@@ -253,11 +253,11 @@ The **Microsoft Agent Framework** is an open-source development kit that unifies
 | 📦 [Redis Message Store](agent-framework/threads/3-redis_chat_message_store_thread.ipynb) | ⚠️ Requires Redis | Distributed conversation storage with 5 comprehensive examples |
 | 🔄 [Suspend/Resume Threads](agent-framework/threads/4-suspend_resume_thread.ipynb) | ✅ Tested | Service-managed & in-memory thread persistence patterns (converted from Python script) |
 
-#### 📊 Observability (`observability-and-evaluations/`)
+#### 📊 Observability and Evaluations (`observability-and-evaluations/`)
 | Notebook | Description |
 |----------|-------------|
 | 👁️ [Observability](observability-and-evaluations/1-Observability.ipynb) | Monitoring and telemetry for AI applications |
-| � [Evaluation](observability-and-evaluations/2-evaluation.ipynb) | Quality assessment and benchmarking |
+| 📈 [Evaluation](observability-and-evaluations/2-evaluation.ipynb) | Quality assessment and benchmarking |
 
 #### 🎨 Development UI (`devui/`)
 | Implementation | Description |
