@@ -49,7 +49,7 @@ agentic-ai-lab/
 ├── 🔴 ai-red-teaming-agent/   # AI Red Teaming and Security Testing
 ├── 🤖⚙️ agent-framework/        # Microsoft Agent Framework for advanced agent development
 ├── 🏗️ sk-and-autogen/          # Semantic Kernel and AutoGen frameworks
-├── 📊 observability/         # Monitoring, evaluation, and quality assurance
+├── 📊 observability-and-evaluations/         # Monitoring, evaluation, and quality assurance
 ├── 🗣️ ai-language/             # AI Language Services with Logic Apps low-code workflows
 ├── 👁️ ai-vision/               # AI Vision Services with low-code solutions
 ├── 📄 content-understanding/   # Document classification and content extraction
@@ -253,11 +253,11 @@ The **Microsoft Agent Framework** is an open-source development kit that unifies
 | 📦 [Redis Message Store](agent-framework/threads/3-redis_chat_message_store_thread.ipynb) | ⚠️ Requires Redis | Distributed conversation storage with 5 comprehensive examples |
 | 🔄 [Suspend/Resume Threads](agent-framework/threads/4-suspend_resume_thread.ipynb) | ✅ Tested | Service-managed & in-memory thread persistence patterns (converted from Python script) |
 
-#### 📊 Observability (`observability/`)
+#### 📊 Observability (`observability-and-evaluations/`)
 | Notebook | Description |
 |----------|-------------|
-| 👁️ [Agent observability](agent-framework/observability/1-azure_ai_agent_observability.ipynb) | Trace LLM calls, tool executions, token usage with Application Insights |
-| 💬 [Chat Client observability](agent-framework/observability/2-azure_ai_chat_client_with_observability.ipynb) | Monitor Azure AI chat clients with multiple tools |
+| 👁️ [Agent observability](observability-and-evaluations/1-azure_ai_agent_observability.ipynb) | Trace LLM calls, tool executions, token usage with Application Insights |
+| 💬 [Chat Client observability](observability-and-evaluations/2-azure_ai_chat_client_with_observability.ipynb) | Monitor Azure AI chat clients with multiple tools |
 
 #### 🎨 Development UI (`devui/`)
 | Implementation | Description |
@@ -275,12 +275,12 @@ The **Microsoft Agent Framework** is an open-source development kit that unifies
 | ❤️ [AutoGen Personalized Analytics](sk-and-autogen/3-autogen-personalized-heart-rate.ipynb) | Health domain specialization |
 
 ### 📊 Phase 8: Quality & Operations
-**Location:** `observability/`
+**Location:** `observability-and-evaluations/`
 
 | Notebook | Description |
 |----------|-------------|
-| 👁️ [Observability](observability/1-Observability.ipynb) | Monitoring and telemetry |
-| 📈 [Evaluation](observability/2-evaluation.ipynb) | Quality assessment and benchmarking |
+| 👁️ [Observability](observability-and-evaluations/1-Observability.ipynb) | Monitoring and telemetry |
+| 📈 [Evaluation](observability-and-evaluations/2-evaluation.ipynb) | Quality assessment and benchmarking |
 
 ### 🗣️ Phase 9: AI Language Services with Low-Code Workflows
 **Location:** `ai-language/`
