@@ -253,13 +253,11 @@ The **Microsoft Agent Framework** is an open-source development kit that unifies
 | 📦 [Redis Message Store](agent-framework/threads/3-redis_chat_message_store_thread.ipynb) | ⚠️ Requires Redis | Distributed conversation storage with 5 comprehensive examples |
 | 🔄 [Suspend/Resume Threads](agent-framework/threads/4-suspend_resume_thread.ipynb) | ✅ Tested | Service-managed & in-memory thread persistence patterns (converted from Python script) |
 
-#### 📊 Observability and Evaluations
-| Notebook | Location | Description |
-|----------|----------|-------------|
-| 👁️ [Agent Observability](agent-framework/observability/1-azure_ai_agent_observability.ipynb) | `agent-framework/observability/` | Trace LLM calls, tool executions, token usage with Application Insights |
-| 💬 [Chat Client Observability](agent-framework/observability/2-azure_ai_chat_client_with_observability.ipynb) | `agent-framework/observability/` | Monitor Azure AI chat clients with multiple tools |
-| 👁️ [Observability](observability-and-evaluations/1-Observability.ipynb) | `observability-and-evaluations/` | Monitoring and telemetry for AI applications |
-| 📈 [Evaluation](observability-and-evaluations/2-evaluation.ipynb) | `observability-and-evaluations/` | Quality assessment and benchmarking |
+#### 📊 Observability (`observability/`)
+| Notebook | Description |
+|----------|-------------|
+| 👁️ [Agent Observability](agent-framework/observability/1-azure_ai_agent_observability.ipynb) | Trace LLM calls, tool executions, token usage with Application Insights |
+| 💬 [Chat Client Observability](agent-framework/observability/2-azure_ai_chat_client_with_observability.ipynb) | Monitor Azure AI chat clients with multiple tools |
 
 #### 🎨 Development UI (`devui/`)
 | Implementation | Description |
