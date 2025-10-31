@@ -256,8 +256,8 @@ The **Microsoft Agent Framework** is an open-source development kit that unifies
 #### 📊 Observability (`observability-and-evaluations/`)
 | Notebook | Description |
 |----------|-------------|
-| 👁️ [Agent observability](observability-and-evaluations/1-azure_ai_agent_observability.ipynb) | Trace LLM calls, tool executions, token usage with Application Insights |
-| 💬 [Chat Client observability](observability-and-evaluations/2-azure_ai_chat_client_with_observability.ipynb) | Monitor Azure AI chat clients with multiple tools |
+| 👁️ [Observability](observability-and-evaluations/1-Observability.ipynb) | Monitoring and telemetry for AI applications |
+| � [Evaluation](observability-and-evaluations/2-evaluation.ipynb) | Quality assessment and benchmarking |
 
 #### 🎨 Development UI (`devui/`)
 | Implementation | Description |
