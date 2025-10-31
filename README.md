@@ -43,13 +43,13 @@ This comprehensive laboratory transforms you from an AI enthusiast into an Azure
 ```
 agentic-ai-lab/
 ├── 📚 initial-setup/           # Start here - Authentication & environment setup
-├── 💬 chat-rag/               # Chat completion and RAG fundamentals
-├── 🤖 agents/                 # AI Agents development and tools (includes multi-agent)
-├── 🔌 agents-with-mcp/        # Model Context Protocol (MCP) integration
-├── 🔴 ai-red-teaming-agent/   # AI Red Teaming and Security Testing
-├── 🤖⚙️ agent-framework/        # Microsoft Agent Framework for advanced agent development
+├── 💬 chat-rag/                # Chat completion and RAG fundamentals
+├── 🤖 agents/                  # AI Agents development and tools (includes multi-agent)
+├── 🔌 agents-with-mcp/         # Model Context Protocol (MCP) integration
+├── 🔴 ai-red-teaming-agent/    # AI Red Teaming and Security Testing
+├── 🤖⚙️ agent-framework/      # Microsoft Agent Framework for advanced agent development
 ├── 🏗️ sk-and-autogen/          # Semantic Kernel and AutoGen frameworks
-├── 📊 observalibility/         # Monitoring, evaluation, and quality assurance
+├── 📊 observability/           # Monitoring, evaluation, and quality assurance
 ├── 🗣️ ai-language/             # AI Language Services with Logic Apps low-code workflows
 ├── 👁️ ai-vision/               # AI Vision Services with low-code solutions
 ├── 📄 content-understanding/   # Document classification and content extraction
@@ -87,15 +87,15 @@ pip install -r requirements.txt
 
 ### Step 4: Azure AI Foundry Setup
 
-1. **Create Azure AI Foundry Project**
+1. **Create an Azure AI Foundry Resource and Project**
+   - If an AI Foundry resource does not exist, create one in the [Azure Portal](https://learn.microsoft.com/en-us/azure/ai-services/multi-service-resource?pivots=azportal) (West US recommended region if Content Understanding is needed, otherwise East US 2 is preferred)
+      - This will create a default Project
+
+<img src="images/foundry-resource-creation.png" width="60%"/>
    
-   To create an AI Foundry resource in the Azure portal follow these instructions:
+   - If an AI Foundry resource already exists, create a new [Project](https://learn.microsoft.com/en-us/azure/ai-foundry/how-to/create-projects?tabs=ai-foundry#create-multiple) (same region recommendation as above)
 
-   - Select this AI Foundry resource link: https://portal.azure.com/#create/Microsoft.CognitiveServicesAIFoundry
-
-   - On the Create page, provide the following information:
-
-   <img src="images/create-foundry-resource.png" width="75%"/>
+<img src="images/project-creation.png" width="60%"/>
 
    | Project details | Description |
    |----------------|-------------|
@@ -114,13 +114,13 @@ pip install -r requirements.txt
    | **Chat/Completion** | `gpt-4o`, `gpt-4o-mini` | Primary reasoning & conversation |
    | **Text Embeddings** | `text-embedding-3-large` | Vector search & RAG |
 
-   - On the left Nav Menu of the foundry portal go to Models+endpoints
-   - Click Deploy a model button-->Deploy base model
-      - Search for the models in the table above , select a model, click confirm and Deploy and connect
-       <img src="images/DeployModels.png" width="75%"/>
+   - On the left navigation menu of the Foundry portal go to Models + endpoints
+   - Deploy model -> Deploy base model
+      - Search for the models in the table above and deploy them into your Foundry Project
+       <img src="images/deploy-models.png" width="75%"/>
 
 3. **Configure an Azure Search Service**
-   - Create an Azure AI Search resource in Azure
+   - Create an [Azure AI Search resource](https://learn.microsoft.com/en-us/azure/search/search-create-service-portal) in Azure
    - Connect this resource to your AI Foundry project
       - Navigate to your AI Foundry project → Management Center → Connected Resources → Add Connection → Select Azure AI Search
       <img src="images/foundry-connection.png" width="75%"/>
@@ -141,7 +141,7 @@ pip install -r requirements.txt
    - For example, AZURE_OPENAI variables-
 <img src="images/env-example.png" width="75%"/>  
 
----
+   - For Content Understanding, use the Azure AI Services endpoint
 
 ## 📚 Learning Path
 
