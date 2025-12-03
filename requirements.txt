@@ -13,6 +13,7 @@ azure-monitor-opentelemetry>=1.6.0
 azure-core-tracing-opentelemetry>=1.0.0b12
 opentelemetry-exporter-otlp>=1.36.0
 opentelemetry-sdk>=1.36.0
+opentelemetry-instrumentation-openai-v2>=2.0b0
 
 # Jupyter and Development Tools
 jupyter>=1.1.0
@@ -26,3 +27,9 @@ nbformat>=5.10.0
 mcp>=1.13.0
 fastmcp>=2.11.0
 
+Pillow>=10.0.0
+
+# Microsoft Agent Framework (Preview)
+agent-framework>=1.0.0b1
+agent-framework-core>=1.0.0b1
+agent-framework-azure-ai>=1.0.0b1
