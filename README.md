@@ -99,7 +99,7 @@ pip install -r requirements.txt
    |----------------|-------------|
    | **Subscription** | Select one of your available Azure subscriptions. |
    | **Resource group** | The Azure resource group that will contain your Azure AI Foundry resource. You can create a new group or add it to a preexisting group. |
-   | **Region** | The location of your Azure AI service instance. Different locations may introduce latency, but have no impact on the runtime availability of your resource. |
+   | **Region** | The location of your Azure AI service instance (below in step 5, you will be enabling Content Understanding which is only available in the following regions, so make sure you choose one of these regions:  westus, swedencentral, australiaeast. Different locations may introduce latency, but have no impact on the runtime availability of your resource. |
    | **Name** | A descriptive name for your Azure AI Foundry resource. For example, MyAIServicesResource. |
    | **Default Project Name** | Keep the default project as it is. |
 
