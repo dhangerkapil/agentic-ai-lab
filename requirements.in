@@ -1,0 +1,39 @@
+# Azure SDK and AI Services
+azure-identity==1.24.0
+azure-ai-projects==1.1.0b2
+azure-ai-inference[opentelemetry]==1.0.0b9
+azure-ai-evaluation==1.10.0
+azure-ai-contentsafety==1.0.0
+azure-search-documents==11.5.3
+azure-ai-ml==1.28.1
+
+# Telemetry and Monitoring  
+azure-monitor-opentelemetry==1.7.0
+azure-core-tracing-opentelemetry==1.0.0b12
+opentelemetry-exporter-otlp==1.36.0
+opentelemetry-sdk==1.36.0
+
+# Jupyter and Development Tools
+jupyter==1.1.1
+python-dotenv==1.1.1
+notebook==7.4.5
+ipykernel==6.30.1
+pandas==2.3.2
+tabulate==0.9.0
+nbformat==5.10.4
+
+# Model Context Protocol (MCP) Dependencies
+mcp==1.13.1
+fastmcp==2.11.3
+
+# Development Tools
+pip-tools==7.5.2
+
+# Image generation
+pillow==11.3.0
+requests==2.32.5
+
+# Microsoft Agent Framework (Preview)
+agent-framework==1.0.0b251007
+agent-framework-core==1.0.0b251007
+agent-framework-azure-ai==1.0.0b251007

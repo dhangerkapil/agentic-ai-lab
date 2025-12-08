@@ -23,14 +23,19 @@ You should expect to spend about 30-45 minutes running the notebook. Execution t
 1. Install the required packages:
 
    ```bash
-   pip install azure-ai-evaluation[redteam] azure-identity python-dotenv azure-ai-projects
+   pip install azure-ai-evaluation[redteam] 
    ```
+
+   > **⚠️ Important Dependency Conflict:** The `azure-ai-evaluation[redteam]` package depends on `pyrit` which requires `aiofiles==23.2.1`, but `agent-framework-core` requires `aiofiles>=24.1.0`. This means:
+   > - Installing red teaming packages will **downgrade** `aiofiles` to version 23.2.1
+   > - This may **break agent-framework notebooks** that depend on the newer version
+   > - **Recommendation**: Complete agent-framework labs before installing red teaming dependencies, or use a separate virtual environment for this lab
 
 2. Set up your environment variables in a .env file:
 
    ```env
    # Azure AI Project Connection String
-   PROJECT_CONNECTION_STRING="https://your-aifoundry-endpoint-name.services.ai.azure.com/"
+   AZURE_AI_PROJECT_ENDPOINT="https://your-aifoundry-endpoint-name.services.ai.azure.com/"
    MODEL_DEPLOYMENT_NAME="gpt-4o-mini"
    MODEL_API_VERSION="2024-12-01-preview"
    TENANT_ID="your-tenant-id"

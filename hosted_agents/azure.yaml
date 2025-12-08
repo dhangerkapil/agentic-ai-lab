@@ -1,0 +1,128 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/Azure/azure-dev/main/schemas/v1.0/azure.yaml.json
+
+requiredVersions:
+    extensions:
+        azure.ai.agents: '>=0.1.0-preview'
+name: ai-foundry-starter-basic
+services:
+    CalculatorAgentLG:
+        project: src/CalculatorAgent
+        host: azure.ai.agent
+        language: docker
+        docker:
+            remoteBuild: true
+        config:
+            container:
+                resources:
+                    cpu: "1"
+                    memory: 2Gi
+                scale:
+                    maxReplicas: 3
+                    minReplicas: 1
+            deployments:
+                - model:
+                    format: OpenAI
+                    name: gpt-4o-mini
+                    version: "2024-07-18"
+                  name: gpt-4o-mini
+                  sku:
+                    capacity: 10
+                    name: GlobalStandard
+    WebSearchAgent:
+        project: src/WebSearchAgent
+        host: azure.ai.agent
+        language: docker
+        docker:
+            remoteBuild: true
+        config:
+            container:
+                resources:
+                    cpu: "1"
+                    memory: 2Gi
+                scale:
+                    maxReplicas: 3
+                    minReplicas: 1
+            deployments:
+                - model:
+                    format: OpenAI
+                    name: gpt-4o-mini
+                    version: "2024-07-18"
+                  name: gpt-4o-mini
+                  sku:
+                    capacity: 995
+                    name: GlobalStandard
+            resources:
+                - connectionName: groundingwithbing57dacu
+                  resource: bing_grounding
+    agent-with-hosted-mcp:
+        project: src/agent-with-hosted-mcp
+        host: azure.ai.agent
+        language: docker
+        docker:
+            remoteBuild: true
+        config:
+            container:
+                resources:
+                    cpu: "1"
+                    memory: 2Gi
+                scale:
+                    maxReplicas: 3
+                    minReplicas: 1
+            deployments:
+                - model:
+                    format: OpenAI
+                    name: gpt-4o-mini
+                    version: "2024-07-18"
+                  name: gpt-4o-mini
+                  sku:
+                    capacity: 995
+                    name: GlobalStandard
+    agent-with-text-search-rag:
+        project: src/agent-with-text-search-rag
+        host: azure.ai.agent
+        language: docker
+        docker:
+            remoteBuild: true
+        config:
+            container:
+                resources:
+                    cpu: "1"
+                    memory: 2Gi
+                scale:
+                    maxReplicas: 3
+                    minReplicas: 1
+            deployments:
+                - model:
+                    format: OpenAI
+                    name: gpt-4o-mini
+                    version: "2024-07-18"
+                  name: gpt-4o-mini
+                  sku:
+                    capacity: 995
+                    name: GlobalStandard
+    msft-learn-mcp-agent:
+        project: src/msft-learn-mcp-agent
+        host: azure.ai.agent
+        language: docker
+        docker:
+            remoteBuild: true
+        config:
+            container:
+                resources:
+                    cpu: "1"
+                    memory: 2Gi
+                scale:
+                    maxReplicas: 3
+                    minReplicas: 1
+            deployments:
+                - model:
+                    format: OpenAI
+                    name: gpt-4o-mini
+                    version: "2024-07-18"
+                  name: gpt-4o-mini
+                  sku:
+                    capacity: 995
+                    name: GlobalStandard
+infra:
+    provider: bicep
+    path: ./infra

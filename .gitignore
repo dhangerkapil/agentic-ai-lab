@@ -127,8 +127,21 @@ sample/frontend/.env
 
 .cache/
 .DS_Store
+Thumbs.db
 
 *.lock
+
+# Conversation logs
+conversations/
+
+# IDE and editor files
+.idea/
+*.swp
+*.swo
+*~
+
+# Temporary requirements exports (pip-tools generates requirements.txt)
+requirements_exported.txt
 
 # Security and Certificate Files
 *.pem
@@ -157,3 +170,10 @@ recipes.md
 red_team_output.json
 nutrition_data.csv
 bmi_analysis_assistant-*.png
+
+# Azure specific files
+.azure
+
+# Temporary files
+*.tmp
+*.tmp_proj
