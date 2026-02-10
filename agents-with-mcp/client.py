@@ -8,7 +8,7 @@ from mcp import ClientSession, StdioServerParameters
 from mcp.client.stdio import stdio_client
 from azure.ai.agents import AgentsClient
 from azure.ai.agents.models import FunctionTool, MessageRole, ListSortOrder
-from azure.identity import DefaultAzureCredential
+from azure.identity import DefaultAzureCredential, AzureCliCredential, InteractiveBrowserCredential, ChainedTokenCredential
 
 ##need 
 ##mcp-1.16.0 - Core MCP framework -pip install mcp --upgrade
@@ -27,6 +27,13 @@ project_endpoint = (
     or os.getenv("PROJECT_ENDPOINT")
 )
 model_deployment = os.getenv("MODEL_DEPLOYMENT_NAME")
+tenant_id = os.getenv("TENANT_ID")
+
+# Validate and clean endpoint (remove any inline comments)
+if project_endpoint and '#' in project_endpoint:
+    print("⚠️  WARNING: Endpoint contains '#' - cleaning it...")
+    project_endpoint = project_endpoint.split('#')[0].strip()
+    print(f"✅ Cleaned endpoint: {project_endpoint}")
 
 # Verify configuration is loaded
 print(f"Project Endpoint: {project_endpoint}")
@@ -63,11 +70,27 @@ async def connect_to_server(exit_stack: AsyncExitStack):
 
 async def chat_loop(session):
 
+    # Create credential with tenant-specific authentication
+    print("🔐 Authenticating with Azure...")
+    try:
+        if tenant_id:
+            credential = ChainedTokenCredential(
+                AzureCliCredential(tenant_id=tenant_id),
+                InteractiveBrowserCredential(tenant_id=tenant_id)
+            )
+        else:
+            credential = DefaultAzureCredential()
+        print("✅ Credential created successfully")
+    except Exception as e:
+        print(f"❌ Credential creation failed: {e}")
+        return
+
     # Connect to the agents client
     agents_client = AgentsClient(
         endpoint=project_endpoint,
-        credential=DefaultAzureCredential()
+        credential=credential
     )
+    print("✅ Connected to Azure AI Agents")
 
     # List tools available on the server
     response = await session.list_tools()
